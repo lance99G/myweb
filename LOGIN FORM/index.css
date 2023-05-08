@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(181, 207, 211);
+    margin: 0px;
+    padding: 0;
+}
+
+.navbar{
+  background-color: aqua;
+  padding-bottom: 17px;
+  font-size: 25;
+}
+.navbar > ul{
+    display: flex;
+    padding-left: 400px;
+}
+.navbar >ul >li {
+ list-style-type: none;
+ padding: 30px;
+}
+.navbar >ul >li >a{
+    text-decoration: none;
+}
+.img{
+    width: 150px;
+    height:130px;
+    float: left;
+    border-radius: 30%;
+    
+}

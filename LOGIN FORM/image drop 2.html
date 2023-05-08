@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Dropdown Menu</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+
+		.dropdown {
+			position: relative;
+			display: inline-block;
+		}
+
+		.dropdown-menu {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			background-color: #fff;
+			padding: 10px;
+			border: 1px solid #ccc;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+			display: none;
+			z-index: 1;
+		}
+
+		.dropdown.show .dropdown-menu {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="dropdown" onmouseover="toggleDropdown(this)">
+		<img src="image.jpg" alt="Image" width="200" height="200">
+		<div class="dropdown-menu">
+			<a href="#">Menu Item 1</a>
+			<a href="#">Menu Item 2</a>
+			<a href="#">Menu Item 3</a>
+		</div>
+	</div>
+
+	<script>
+		function toggleDropdown(dropdown) {
+			dropdown.classList.toggle('show');
+		}
+	</script>
+</body>
+</html>
